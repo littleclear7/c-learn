@@ -3,4 +3,5 @@ project(c_learn C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(c_learn main.c)
+
+add_executable(quick-sort quick-sort.c)

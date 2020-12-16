@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /root/CLionProjects/c-learn/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/c_learn.dir/all
+all: CMakeFiles/quick-sort.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/c_learn.dir/clean
+clean: CMakeFiles/quick-sort.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/c_learn.dir
+# Target rules for target CMakeFiles/quick-sort.dir
 
 # All Build rule for target.
-CMakeFiles/c_learn.dir/all:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/depend
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/c-learn/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target c_learn"
-.PHONY : CMakeFiles/c_learn.dir/all
+CMakeFiles/quick-sort.dir/all:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/depend
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/c-learn/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target quick-sort"
+.PHONY : CMakeFiles/quick-sort.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/c_learn.dir/rule: cmake_check_build_system
+CMakeFiles/quick-sort.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/c-learn/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/c_learn.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quick-sort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/c-learn/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/c_learn.dir/rule
+.PHONY : CMakeFiles/quick-sort.dir/rule
 
 # Convenience name for target.
-c_learn: CMakeFiles/c_learn.dir/rule
+quick-sort: CMakeFiles/quick-sort.dir/rule
 
-.PHONY : c_learn
+.PHONY : quick-sort
 
 # clean rule for target.
-CMakeFiles/c_learn.dir/clean:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/clean
-.PHONY : CMakeFiles/c_learn.dir/clean
+CMakeFiles/quick-sort.dir/clean:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/clean
+.PHONY : CMakeFiles/quick-sort.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

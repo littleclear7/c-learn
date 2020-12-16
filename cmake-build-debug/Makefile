@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /root/CLionProjects/c-learn/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/soft/clion-2020.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/root/soft/clion-2020.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named c_learn
+# Target rules for targets named quick-sort
 
 # Build rule for target.
-c_learn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c_learn
-.PHONY : c_learn
+quick-sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick-sort
+.PHONY : quick-sort
 
 # fast build rule for target.
-c_learn/fast:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/build
-.PHONY : c_learn/fast
+quick-sort/fast:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/build
+.PHONY : quick-sort/fast
 
-main.o: main.c.o
+quick-sort.o: quick-sort.c.o
 
-.PHONY : main.o
+.PHONY : quick-sort.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/main.c.o
-.PHONY : main.c.o
+quick-sort.c.o:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/quick-sort.c.o
+.PHONY : quick-sort.c.o
 
-main.i: main.c.i
+quick-sort.i: quick-sort.c.i
 
-.PHONY : main.i
+.PHONY : quick-sort.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/main.c.i
-.PHONY : main.c.i
+quick-sort.c.i:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/quick-sort.c.i
+.PHONY : quick-sort.c.i
 
-main.s: main.c.s
+quick-sort.s: quick-sort.c.s
 
-.PHONY : main.s
+.PHONY : quick-sort.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/c_learn.dir/build.make CMakeFiles/c_learn.dir/main.c.s
-.PHONY : main.c.s
+quick-sort.c.s:
+	$(MAKE) -f CMakeFiles/quick-sort.dir/build.make CMakeFiles/quick-sort.dir/quick-sort.c.s
+.PHONY : quick-sort.c.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... c_learn"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... edit_cache"
+	@echo "... quick-sort"
+	@echo "... quick-sort.o"
+	@echo "... quick-sort.i"
+	@echo "... quick-sort.s"
 .PHONY : help
 
 
